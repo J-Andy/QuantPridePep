@@ -5,7 +5,8 @@ RUN conda install numpy pandas scikit-learn
 RUN pip install argparse pymzML==0.7.8
 RUN pip install simplejson
 RUN apt-get install git
-RUN apt-get install software-properties-common
+# RUN apt-get install software-properties-common
+RUN apt-get install python-software-properties
 RUN add-apt-repository http://ppa.launchpad.net/webupd8team/java/ubuntu
 RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" >>  /etc/apt/sources.list.d/java-8-debian.list 
 RUN apt-get update
